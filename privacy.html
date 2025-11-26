@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    .policy-container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .policy-box {
+      height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .actions {
+      text-align: center;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+<div class="policy-container">
+  <h1>Our Privacy Policy</h1>
+  <div class="policy-box" id="policyBox">
+    <!-- Inserisci qui il tuo testo di Privacy Policy -->
+    <p>
+      We want your maximum privacy and security for you personal data.
+      <br>
+      We will not get any private informations or data from you.
+      <br>
+      This website is made to be a usefull tool for everyone giving a lot of free services.
+      <br>
+    </p>
+    <!-- Aggiungi altro contenuto se necessario -->
+  </div>
+
+  <div class="actions">
+    <label>
+      <input type="checkbox" id="acceptCheckbox"> I read and accept the Privacy Policy
+    </label>
+    <br><br>
+    <button id="continueBtn" disabled onclick="prosegui()">Continue</button>
+  </div>
+</div>
+
+<script>
+    const checkbox = document.getElementById('acceptCheckbox');
+    const continueBtn = document.getElementById('continueBtn');
+  
+    checkbox.addEventListener('change', () => {
+      continueBtn.disabled = !checkbox.checked;
+    });
+  
+    function prosegui() {
+  // Salva che l'utente ha accettato la privacy
+  localStorage.setItem('privacyAccettata', 'true');
+
+  // Legge il parametro 'redirect' dalla URL (se esiste)
+  const urlParams = new URLSearchParams(window.location.search);
+  const redirectUrl = urlParams.get('redirect') || 'index.html';  // Default: 'index.html'
+
+  // Reindirizza l'utente alla pagina di destinazione
+  window.location.href = redirectUrl;
+}
+</script>
+</body>

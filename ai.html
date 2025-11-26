@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="lemonlogo.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="panic-key.js"></script>
+          <script src="/path/to/panic-key.js"></script>
+        <title>Lemon Ai</title>
+
+
+
+
+
+
+
+
+
+
+
+
+        <head>
+          <title>Lemon - Turtle Tech</title>
+          <link id="favicon-tag" rel="icon" href="assets/default-favicon.ico" type="image/x-icon" />
+        
+          <script>
+            (function() {
+              const customTitle = localStorage.getItem('tabCloakTitle');
+              const customFavicon = localStorage.getItem('tabCloakFavicon');
+        
+              if (customTitle) {
+                document.title = customTitle;
+              }
+              if (customFavicon) {
+                let linkTag = document.getElementById('favicon-tag');
+                if (!linkTag) {
+                  linkTag = document.createElement('link');
+                  linkTag.id = 'favicon-tag';
+                  linkTag.rel = 'icon';
+                  linkTag.type = 'image/x-icon';
+                  document.head.appendChild(linkTag);
+                }
+                linkTag.href = customFavicon;
+              }
+            })();
+          </script>
+        </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <style>
+            body {
+                background-color: black; /* Set background color to black */
+                margin: 0;
+                color: yellow; /* Default text color */
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+
+            .lemonade {
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Center horizontally */
+                position: absolute;
+                top: 20px; /* Position at the top */
+                left: 50%; /* Center horizontally */
+                transform: translateX(-50%); /* Adjust for centering */
+            }
+
+            .lemonade span {
+                font-size: 11px;
+                font-weight: bold;
+                display: inline-block;
+                background: linear-gradient(
+                    to left,
+                    #fff700,
+                    #ffeb3b,
+                    #ffd700,
+                    #f1c40f,
+                    #fff700
+                );
+                background-size: 400% auto;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: growFast 0.3s ease-out forwards, colorFlowFast 2s linear infinite;
+                animation-delay: calc(var(--i) * 0.05s), 0.3s;
+            }
+
+            .space {
+                width: 25px;
+            }
+
+            @keyframes growFast {
+                0% {
+                    font-size: 11px;
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100% {
+                    font-size: 70px;
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes colorFlowFast {
+                0% {
+                    background-position: 100% center;
+                }
+                100% {
+                    background-position: 0% center;
+                }
+            }
+        </style>
+    </head>
+    </head>
+        <!-- Animated Title -->
+        <div class="lemonade">
+            <span style="--i:0">L</span>
+            <span style="--i:1">e</span>
+            <span style="--i:2">m</span>
+            <span style="--i:2">o</span>
+            <span style="--i:2">n</span>
+
+            <span class="space"></span>
+
+            <span style="--i:3">A</span>
+            <span style="--i:4">i</span>
+
+            <span class="space"></span>
+
+            <span style="--i:5">C</span>
+            <span style="--i:6">h</span>
+            <span style="--i:7">a</span>
+            <span style="--i:8">t</span>
+        </div>
+    </head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottone Back</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* Posiziona il contenuto in basso */
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .bottone-giallo {
+      background-color: #ffeb3b;
+      color: #000;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: absolute;
+      bottom: 20px; /* Distanza dal fondo */
+    }
+
+    .bottone-giallo:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <button class="bottone-giallo" onclick="window.location.href='special.html'">
+      Back
+    </button>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cursor</title>
+    <style>
+        /* Custom Cursor */
+        .custom-cursor {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid red; /* Initial color */
+            pointer-events: none;
+            transition: transform 0.1s linear;
+            box-shadow: 0 0 10px red;
+            z-index: 10000;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            cursor: none; /* Nasconde il cursore di sistema */
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById("cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // RGB Border Animation
+        let hue = 0;
+        setInterval(() => {
+            hue = (hue + 1) % 360;
+            cursor.style.borderColor = `hsl(${hue}, 100%, 50%)`;
+            cursor.style.boxShadow = `0 0 10px hsl(${hue}, 100%, 50%)`;
+        }, 30);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemon Menu</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --sidebar-bg: black;
+      --sidebar-text: yellow;
+      --sidebar-line: yellow;
+      --sidebar-icon: yellow;
+      --sidebar-border: yellow;
+
+      --hover-bg: yellow;
+      --hover-text: black;
+      --hover-line: black;
+      --hover-icon: black;
+      --hover-border: yellow;
+
+      --sidebar-width: 260px;
+      --sidebar-radius: 25px;
+      --transition-speed: 0.4s;
+      --font-title: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-title);
+      background: black;
+      color: yellow;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 30px;
+      bottom: 30px;
+      left: 30px;
+      width: var(--sidebar-width);
+      background-color: var(--sidebar-bg);
+      color: var(--sidebar-text);
+      border-radius: var(--sidebar-radius);
+      border: 2px solid var(--sidebar-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0;
+      transition: all var(--transition-speed) ease-in-out;
+    }
+
+    .sidebar:hover {
+      background-color: var(--hover-bg);
+      color: var(--hover-text);
+      transform: scale(1.03);
+      border-color: var(--hover-border);
+    }
+
+    .sidebar-logo {
+      text-align: center;
+      padding-bottom: 10px; /* spazio originale */
+    }
+
+    .sidebar-logo img {
+      max-width: 100%;
+      max-height: 110px; /* aumentato da 80px, ma ancora dentro il contenitore */
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      object-fit: contain; /* mantiene proporzioni */
+    }
+
+    .sidebar:hover .sidebar-logo img {
+      transform: scale(1.1);
+    }
+
+    .sidebar-title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--sidebar-line);
+      padding-bottom: 10px;
+    }
+
+    .sidebar:hover .sidebar-title {
+      color: var(--hover-text);
+      border-color: var(--hover-line);
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      color: var(--sidebar-text);
+      text-decoration: none;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .nav-link i,
+    .nav-link span {
+      color: var(--sidebar-icon);
+      transition: color var(--transition-speed);
+    }
+
+    .nav-link:hover {
+      transform: scale(1.07);
+      border: 2px solid var(--hover-line);
+      border-radius: 15px;
+    }
+
+    .sidebar:hover .nav-link {
+      color: var(--hover-text);
+    }
+
+    .sidebar:hover .nav-link i,
+    .sidebar:hover .nav-link span {
+      color: var(--hover-icon);
+    }
+
+    .sidebar-footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px 10px;
+      color: var(--sidebar-text);
+      transition: color var(--transition-speed);
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+
+    .sidebar:hover .sidebar-footer {
+      color: var(--hover-text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🍋 SIDEBAR -->
+  <nav class="sidebar">
+
+    <div class="sidebar-logo">
+      <a href="index.html">
+        <img src="lemonlogo.png" alt="Lemon Logo">
+      </a>
+      
+    </div>
+    <div class="sidebar-title">🍋 Lemon Menu 🍋</div>
+    <ul>
+        <li><a href="index.html" class="nav-link"><i class='bx bxs-home'></i><span>Home</span></a></li>
+        <li><a href="lemons.html" class="nav-link"><i class='bx bxs-invader'></i><span>The Lemons</span></a></li>
+        <li><a href="special.html" class="nav-link"><i class='bx bxs-lemon'></i><span>Special Lemons</span></a></li>
+        <li><a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i><span>About Lemon</span></a></li>
+        <li><a href="settings.html" class="nav-link"><i class='bx bxs-cog'></i><span>Lemon Settings</span></a></li>
+        <li><a href="login.html" class="nav-link"><i class='bx bx-log-in'></i><span>Login</span></a></li>
+    </ul>
+    <a href="ttcopyrights.html"
+       class="sidebar-footer" target="_blank">© Turtle Tech</a>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .donate-button:hover img {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .donate-button img {
+      transition: transform 0.2s ease-in-out;
+    }
+  </style>
+  
+  <div class="donate-button" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <a href="https://www.buymeacoffee.com/turtle.tech">
+      <img src="https://img.buymeacoffee.com/button-api/?text=Donate to Turtle Tech&emoji=🐢&slug=turtle.tech&button_colour=40DCA5&font_colour=ffffff&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00" />
+    </a>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="turtle.tech" data-description="Support me on Buy me a coffee!" data-message="Please Donate! <3" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <html lang="en"><head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="/assets/media/favicon.ico"> 
+    <title>Turtle AI</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #e0e0e0;
+            margin: 0;
+            background-color: #2b2b2b;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 500;
+            color: #ffffff;
+        }
+    
+        #chat-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    
+        #chat-container {
+            flex: 1;
+            width: 60vw;
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #404040;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            scrollbar-width: thin;
+            scrollbar-color: #6a6a6a #2b2b2b;
+        }
+    
+        #chat-container::-webkit-scrollbar {
+            width: 8px;
+        }
+    
+        #chat-container::-webkit-scrollbar-thumb {
+            background-color: #6a6a6a;
+            border-radius: 10px;
+        }
+    
+        #chat-container::-webkit-scrollbar-track {
+            background-color: #2b2b2b;
+        }
+    
+        .message {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    
+        .message.ai {
+            background-color: #3a3a3a;
+            align-self: flex-start;
+        }
+    
+        .message.user {
+            background-color: #565656;
+            align-self: flex-end;
+        }
+    
+        .copy-icon {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            transition: transform 0.2s;
+        }
+    
+        .copy-icon:active {
+            transform: scale(0.9);
+        }
+    
+        #input-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+        }
+    
+        #user-input {
+            flex-grow: 1;
+            padding: 10px 15px;
+            border: 1px solid #4a4a4a;
+            border-radius: 8px 0 0 8px;
+            background-color: #3b3b3b;
+            color: #e0e0e0;
+            font-size: 1rem;
+            height: 40px;
+            resize: none;
+            scrollbar-width: thin;
+            scrollbar-color: #6a6a6a #2b2b2b;
+        }
+    
+        #user-input::-webkit-scrollbar {
+            width: 8px;
+        }
+    
+        #user-input::-webkit-scrollbar-thumb {
+            background-color: #6a6a6a;
+            border-radius: 10px;
+        }
+    
+        #user-input::-webkit-scrollbar-track {
+            background-color: #2b2b2b;
+        }
+    
+        #user-input:focus {
+            outline: none;
+            border-color: #6a6a6a;
+        }
+    
+        #send-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            background-color: #5a5a5a;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background 0.3s;
+            height: 62px;
+        }
+    
+        #send-button:hover {
+            background-color: #757575;
+        }
+    
+        .loading-dots {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .loading-dots span {
+            width: 8px;
+            height: 8px;
+            background-color: #d3d3d3;
+            border-radius: 50%;
+            animation: bounce 2.4s infinite;
+        }
+    
+        .loading-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+    
+        .loading-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-wrapper">
+        <div id="chat-container">
+            <div class="message ai">
+                <p>What can i be usefull for?</p>
+            </div>
+        </div>
+        <div id="input-container">
+            <textarea id="user-input" placeholder="Message Turtle AI"></textarea>
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const apiKey = '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';
+
+        async function sendMessage() {
+            const userMessage = userInput.value.trim();
+            if (!userMessage) return;
+
+            chatContainer.innerHTML += `<div class="message user"><p>${userMessage}</p></div>`;
+            userInput.value = '';
+
+            const loadingMessage = document.createElement('div');
+            loadingMessage.className = 'message ai';
+            loadingMessage.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
+            chatContainer.appendChild(loadingMessage);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            try {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`,
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        model: 'gemma2-9b-it',
+                        messages: [{ role: 'user', content: userMessage }],
+                        temperature: 0.9,
+                        max_tokens: 200,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                const aiResponse = data.choices[0].message.content;
+
+                loadingMessage.remove();
+
+                const aiMessage = document.createElement('div');
+                aiMessage.className = 'message ai';
+
+                const messageText = document.createElement('p');
+                messageText.textContent = aiResponse;
+
+                const copyIcon = document.createElement('img');
+                copyIcon.src = 'copy.png';
+                copyIcon.className = 'copy-icon';
+                copyIcon.title = 'Copy to clipboard';
+                copyIcon.addEventListener('click', () => {
+                    navigator.clipboard.writeText(aiResponse);
+                    const originalSrc = copyIcon.src;
+                    copyIcon.src = 'check.png';
+                    setTimeout(() => {
+                        copyIcon.src = originalSrc;
+                    }, 2000);
+                });
+
+                aiMessage.appendChild(messageText);
+                aiMessage.appendChild(copyIcon);
+                chatContainer.appendChild(aiMessage);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            } catch (error) {
+                loadingMessage.remove();
+                chatContainer.innerHTML += `<div class="message ai"><p>Error: ${error.message}</p></div>`;
+            }
+        }
+
+        sendButton.addEventListener('click', sendMessage);
+
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    </script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;92fddbee0eeed308&quot;,&quot;version&quot;:&quot;2025.3.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;8be41b6e10e9479099c99f86c64d1a12&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
+</body></html>
+<copyright>© Turtle Tech</copyright>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

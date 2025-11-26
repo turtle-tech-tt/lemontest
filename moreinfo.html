@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina Unica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .page {
+      display: none;
+      padding: 20px;
+    }
+    .active {
+      display: block;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <button onclick="showPage('lemoncreator')">Who is the creator of The Lemonade Edition</button>
+  <button onclick="showPage('whous')">Who we are</button>
+  <button onclick="showPage('lemondate')">Home</button>
+  <button onclick="showPage('contact')">All Contact Emails</button>
+  <button onclick="showPage('faq')">About Lemonade</button>
+  <button onclick="showPage('privacy')">Privacy Policy</button>
+  <button onclick="showPage('terms')">Terms of Service</button>
+  <button onclick="showPage('about')">About</button>
+  <button onclick="showPage('lemonplus')">Lemon+</button>
+  <button onclick="showPage('lemonplusmembers')">Lemon+ Members</button>
+  <button onclick="showPage('lemonplusfaq')">Lemon+ FAQ</button>
+  <button onclick="showPage('lemonplusprivacy')">Lemon+ Privacy Policy</button>
+  <button onclick="showPage('lemonplusterms')">Lemon+ Terms of Service</button>
+
+
+
+
+  <!-- Pagine -->
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="whous" class="page">
+    <h1>Who we are</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemondate" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="contact" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="faq" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+  
+  <div id="lemoncreator" class="page active">
+    <h1>Who is the creator of The Lemonade Edition?</h1>
+    <p>ANSWER.</p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function showPage(pageId) {
+      // Nasconde tutte le sezioni
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+
+      // Mostra la sezione desiderata
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
+
+    </head>
+</html>

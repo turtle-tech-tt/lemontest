@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="lemonlogo.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="panic-key.js"></script>
+          <script src="/path/to/panic-key.js"></script>
+        <title>Lemon Movies</title>
+
+
+
+
+
+
+
+
+
+
+
+
+        <head>
+          <title>Lemon - Turtle Tech</title>
+          <link id="favicon-tag" rel="icon" href="assets/default-favicon.ico" type="image/x-icon" />
+        
+          <script>
+            (function() {
+              const customTitle = localStorage.getItem('tabCloakTitle');
+              const customFavicon = localStorage.getItem('tabCloakFavicon');
+        
+              if (customTitle) {
+                document.title = customTitle;
+              }
+              if (customFavicon) {
+                let linkTag = document.getElementById('favicon-tag');
+                if (!linkTag) {
+                  linkTag = document.createElement('link');
+                  linkTag.id = 'favicon-tag';
+                  linkTag.rel = 'icon';
+                  linkTag.type = 'image/x-icon';
+                  document.head.appendChild(linkTag);
+                }
+                linkTag.href = customFavicon;
+              }
+            })();
+          </script>
+        </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cursor</title>
+    <style>
+        /* Custom Cursor */
+        .custom-cursor {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid red; /* Initial color */
+            pointer-events: none;
+            transition: transform 0.1s linear;
+            box-shadow: 0 0 10px red;
+            z-index: 10000;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            cursor: none; /* Nasconde il cursore di sistema */
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById("cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // RGB Border Animation
+        let hue = 0;
+        setInterval(() => {
+            hue = (hue + 1) % 360;
+            cursor.style.borderColor = `hsl(${hue}, 100%, 50%)`;
+            cursor.style.boxShadow = `0 0 10px hsl(${hue}, 100%, 50%)`;
+        }, 30);
+    </script>
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <style>
+            body {
+                background-color: black; /* Set background color to black */
+                margin: 0;
+                color: yellow; /* Default text color */
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+
+            .lemonade {
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Center horizontally */
+                position: absolute;
+                top: 20px; /* Position at the top */
+                left: 50%; /* Center horizontally */
+                transform: translateX(-50%); /* Adjust for centering */
+            }
+
+            .lemonade span {
+                font-size: 11px;
+                font-weight: bold;
+                display: inline-block;
+                background: linear-gradient(
+                    to left,
+                    #fff700,
+                    #ffeb3b,
+                    #ffd700,
+                    #f1c40f,
+                    #fff700
+                );
+                background-size: 400% auto;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: growFast 0.3s ease-out forwards, colorFlowFast 2s linear infinite;
+                animation-delay: calc(var(--i) * 0.05s), 0.3s;
+            }
+
+            .space {
+                width: 25px;
+            }
+
+            @keyframes growFast {
+                0% {
+                    font-size: 11px;
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100% {
+                    font-size: 70px;
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes colorFlowFast {
+                0% {
+                    background-position: 100% center;
+                }
+                100% {
+                    background-position: 0% center;
+                }
+            }
+        </style>
+    </head>
+    </head>
+        <!-- Animated Title -->
+        <div class="lemonade">
+            <span style="--i:0">L</span>
+            <span style="--i:1">e</span>
+            <span style="--i:2">m</span>
+            <span style="--i:2">o</span>
+            <span style="--i:2">n</span>
+
+            <span class="space"></span>
+
+            <span style="--i:3">M</span>
+            <span style="--i:4">o</span>
+            <span style="--i:5">v</span>
+            <span style="--i:6">i</span>
+            <span style="--i:7">e</span>
+            <span style="--i:8">s</span>
+        </div>
+    </head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemon Menu</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --sidebar-bg: black;
+      --sidebar-text: yellow;
+      --sidebar-line: yellow;
+      --sidebar-icon: yellow;
+      --sidebar-border: yellow;
+
+      --hover-bg: yellow;
+      --hover-text: black;
+      --hover-line: black;
+      --hover-icon: black;
+      --hover-border: yellow;
+
+      --sidebar-width: 260px;
+      --sidebar-radius: 25px;
+      --transition-speed: 0.4s;
+      --font-title: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-title);
+      background: black;
+      color: yellow;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 30px;
+      bottom: 30px;
+      left: 30px;
+      width: var(--sidebar-width);
+      background-color: var(--sidebar-bg);
+      color: var(--sidebar-text);
+      border-radius: var(--sidebar-radius);
+      border: 2px solid var(--sidebar-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0;
+      transition: all var(--transition-speed) ease-in-out;
+    }
+
+    .sidebar:hover {
+      background-color: var(--hover-bg);
+      color: var(--hover-text);
+      transform: scale(1.03);
+      border-color: var(--hover-border);
+    }
+
+    .sidebar-logo {
+      text-align: center;
+      padding-bottom: 10px; /* spazio originale */
+    }
+
+    .sidebar-logo img {
+      max-width: 100%;
+      max-height: 110px; /* aumentato da 80px, ma ancora dentro il contenitore */
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      object-fit: contain; /* mantiene proporzioni */
+    }
+
+    .sidebar:hover .sidebar-logo img {
+      transform: scale(1.1);
+    }
+
+    .sidebar-title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--sidebar-line);
+      padding-bottom: 10px;
+    }
+
+    .sidebar:hover .sidebar-title {
+      color: var(--hover-text);
+      border-color: var(--hover-line);
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      color: var(--sidebar-text);
+      text-decoration: none;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .nav-link i,
+    .nav-link span {
+      color: var(--sidebar-icon);
+      transition: color var(--transition-speed);
+    }
+
+    .nav-link:hover {
+      transform: scale(1.07);
+      border: 2px solid var(--hover-line);
+      border-radius: 15px;
+    }
+
+    .sidebar:hover .nav-link {
+      color: var(--hover-text);
+    }
+
+    .sidebar:hover .nav-link i,
+    .sidebar:hover .nav-link span {
+      color: var(--hover-icon);
+    }
+
+    .sidebar-footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px 10px;
+      color: var(--sidebar-text);
+      transition: color var(--transition-speed);
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+
+    .sidebar:hover .sidebar-footer {
+      color: var(--hover-text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🍋 SIDEBAR -->
+  <nav class="sidebar">
+
+    <div class="sidebar-logo">
+      <a href="index.html">
+        <img src="lemonlogo.png" alt="Lemon Logo">
+      </a>
+      
+    </div>
+    <div class="sidebar-title">🍋 Lemon Menu 🍋</div>
+    <ul>
+        <li><a href="index.html" class="nav-link"><i class='bx bxs-home'></i><span>Home</span></a></li>
+        <li><a href="lemons.html" class="nav-link"><i class='bx bxs-invader'></i><span>The Lemons</span></a></li>
+        <li><a href="special.html" class="nav-link"><i class='bx bxs-lemon'></i><span>Special Lemons</span></a></li>
+        <li><a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i><span>About Lemon</span></a></li>
+        <li><a href="settings.html" class="nav-link"><i class='bx bxs-cog'></i><span>Lemon Settings</span></a></li>
+        <li><a href="login.html" class="nav-link"><i class='bx bx-log-in'></i><span>Login</span></a></li>
+    </ul>
+    <a href="ttcopyrights.html"
+       class="sidebar-footer" target="_blank">© Turtle Tech</a>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .donate-button:hover img {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .donate-button img {
+      transition: transform 0.2s ease-in-out;
+    }
+  </style>
+  
+  <div class="donate-button" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <a href="https://www.buymeacoffee.com/turtle.tech">
+      <img src="https://img.buymeacoffee.com/button-api/?text=Donate to Turtle Tech&emoji=🐢&slug=turtle.tech&button_colour=40DCA5&font_colour=ffffff&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00" />
+    </a>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="turtle.tech" data-description="Support me on Buy me a coffee!" data-message="Please Donate! <3" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drive Movie Links</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 80px); /* lascia spazio per il bottone back */
+      padding: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+      color: yellow;
+      text-align: center;
+    }
+
+    #searchInput {
+      padding: 12px 20px;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 20px;
+      border: 2px solid yellow;
+      margin: 20px 0;
+      font-size: 16px;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+      justify-items: center;
+    }
+
+    .drive-button {
+      background-color: black;
+      color: yellow;
+      border: 2px solid yellow;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .drive-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(255, 255, 0, 0.3);
+    }
+
+    .bottom-button-container {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+    }
+
+    .back-button {
+      background-color: #ffeb3b;
+      color: #000;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      .drive-button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+  <h1>Enjoy The Movies!</h1>
+  <input type="text" id="searchInput" placeholder="Search a Movie..." onkeyup="filterButtons()" />
+
+  <div class="button-container" id="buttonContainer">
+    <a href="https://drive.google.com/file/d/1VWLpj4G4CEgHnjpxfc67MrlEWu5pD75Y/view" target="_blank" class="drive-button">Avengers Infinity War</a>
+    <a href="https://drive.google.com/file/d/1RlG7WoRJroqlcibAgLUMQp4S3h82hY2X/view" target="_blank" class="drive-button">Detective Pikachu</a>
+    <a href="https://drive.google.com/file/d/1K0QVeKrtfTC26m14u3p1h3gbEQx5eqk1/view" target="_blank" class="drive-button">Spider-Man Homecoming</a>
+    <a href="https://drive.google.com/file/d/1j46ezcdk0bZd3bFApyR1-1l_bcmaiOPm/view" target="_blank" class="drive-button">Sonic The Hedgehog</a>
+    <a href="https://drive.google.com/file/d/1I1aXBghC1KFllkIWhnGxr9HdQWdTGNQ1/view" target="_blank" class="drive-button">Super Mario Bros</a>
+    <a href="https://drive.google.com/file/d/1HrS7pC_Hu4ixtemyA4cX7mzLg1YHVSgy/view" target="_blank" class="drive-button">Lorax</a>
+    <a href="https://drive.google.com/file/d/1GjFkhQ2B0MwmueNBVzMSRLG7jx7fYD77/view" target="_blank" class="drive-button">Spongebob Squarepants</a>
+    <a href="https://drive.google.com/file/d/1fvk_iHYmnmy0oz8OetLq9pN036bIB7Mv/view" target="_blank" class="drive-button">Spongebob Movie</a>
+    <a href="https://drive.google.com/file/d/1qaOmrRD1EydzGdqf3sfiGG1K8b44Doss/view" target="_blank" class="drive-button">Jackass n2</a>
+    <a href="https://drive.google.com/file/d/18LUy6RNsD7lPvsfujpzppvRuJIASxED-/view" target="_blank" class="drive-button">Jackass 3D</a>
+    <a href="https://drive.google.com/file/d/1PDiYjXALPPpmO9SJ7TlsKDfdIU7rsIL5/view" target="_blank" class="drive-button">Guardians of The Galaxy</a>
+    <a href="https://drive.google.com/file/d/184DwJfipVPgSp0NF7Q6FT3OXJarGAqPz/view" target="_blank" class="drive-button">The Rise of Voltron</a>
+  </div>
+</div>
+
+<div class="bottom-button-container">
+  <button class="back-button" onclick="window.location.href='special.html'">Back</button>
+</div>
+
+<script>
+  function filterButtons() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const buttons = document.getElementsByClassName("drive-button");
+    for (let i = 0; i < buttons.length; i++) {
+      const text = buttons[i].textContent.toLowerCase();
+      buttons[i].style.display = text.includes(input) ? "inline-block" : "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+</body>
+</html>

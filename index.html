@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+          <script>
+            // Password impostata
+            const correctPassword = "TLE-WDT";
+          
+            // Richiesta password all'apertura del sito
+            const userInput = prompt("Insert the password for the testers of The Lemonade Edition:");
+          
+            if (userInput !== correctPassword) {
+              alert("Password errata. Accesso negato.");
+              // Puoi reindirizzare a un'altra pagina o chiudere l'accesso
+              window.location.href = "about:blank";
+            }
+          </script>
+          
+          <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXCSFXG091"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QXCSFXG091');
+</script>
+          
+          <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#00aaff" />
+
+          <script>
+            // Reindirizza a privacy.html se non è stata ancora accettata
+            if (!localStorage.getItem('privacyAccettata')) {
+              window.location.href = "privacy.html?redirect=index.html";
+            }
+          </script>
+          
+          <script>
+            // Se l'utente NON ha ancora accettato, reindirizza alla privacy
+            if (!localStorage.getItem('privacyAccettata')) {
+              window.location.href = "privacy.html";
+            }
+          </script>          
+            <link id="favicon-tag" rel="icon" href="lemonlogo.png" type="image/x-icon" />
+            <title>The Lemonade Edition</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="panic-key.js"></script>
+          <script src="/path/to/panic-key.js"></script>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+          
+          <body>
+
+
+            <div class="container" id="custom-loader"></div>
+            <script>
+              window.addEventListener('load', () => {
+                const loader = document.getElementById('custom-loader');
+                if (loader) {
+                  loader.style.display = 'none';
+                }
+              });
+            </script>
+          
+        
+        
+          </body>
+
+
+
+
+
+
+          <head>
+            <title>Lemon - Turtle Tech</title>
+            <link id="favicon-tag" rel="icon" href="assets/default-favicon.ico" type="image/x-icon" />
+          
+            <script>
+              (function() {
+                const customTitle = localStorage.getItem('tabCloakTitle');
+                const customFavicon = localStorage.getItem('tabCloakFavicon');
+          
+                if (customTitle) {
+                  document.title = customTitle;
+                }
+                if (customFavicon) {
+                  let linkTag = document.getElementById('favicon-tag');
+                  if (!linkTag) {
+                    linkTag = document.createElement('link');
+                    linkTag.id = 'favicon-tag';
+                    linkTag.rel = 'icon';
+                    linkTag.type = 'image/x-icon';
+                    document.head.appendChild(linkTag);
+                  }
+                  linkTag.href = customFavicon;
+                }
+              })();
+            </script>
+          </head>
+                 
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          
+          <style>
+            .container {
+              --uib-size: 60px;
+              --uib-color: black;
+              --uib-speed: 1.5s;
+              --uib-dot-size: calc(var(--uib-size) * 0.1);
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              height: calc(var(--uib-size) * 0.64);
+              width: calc(var(--uib-size) * 0.64);
+            }
+          
+            @keyframes jump {
+              0%,
+              100% {
+                transform: translateY(120%);
+              }
+          
+              50% {
+                transform: translateY(-120%);
+              }
+            }
+          
+            .dot {
+              --uib-d1: -0.48;
+              --uib-d2: -0.4;
+              --uib-d3: -0.32;
+              --uib-d4: -0.24;
+              --uib-d5: -0.16;
+              --uib-d6: -0.08;
+              --uib-d7: -0;
+              position: absolute;
+              bottom: calc(var(--uib-bottom) + var(--uib-dot-size) / 2);
+              right: calc(var(--uib-right) + var(--uib-dot-size) / 2);
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              height: var(--uib-dot-size);
+              width: var(--uib-dot-size);
+              animation: jump var(--uib-speed) ease-in-out infinite;
+              opacity: var(--uib-scale);
+              will-change: transform;
+              backface-visibility: hidden;
+            }
+          
+            .dot::before {
+              content: '';
+              height: 100%;
+              width: 100%;
+              background-color: var(--uib-color);
+              border-radius: 50%;
+              transform: scale(var(--uib-scale));
+              transition: background-color 0.3s ease;
+            }
+          
+            .dot:nth-child(1) {
+              --uib-bottom: 24%;
+              --uib-right: -35%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d1));
+            }
+            .dot:nth-child(2) {
+              --uib-bottom: 16%;
+              --uib-right: -6%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d2));
+            }
+            .dot:nth-child(3) {
+              --uib-bottom: 8%;
+              --uib-right: 23%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d3));
+            }
+            .dot:nth-child(4) {
+              --uib-bottom: -1%;
+              --uib-right: 51%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+            }
+            .dot:nth-child(5) {
+              --uib-bottom: 38%;
+              --uib-right: -17.5%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d2));
+            }
+            .dot:nth-child(6) {
+              --uib-bottom: 30%;
+              --uib-right: 10%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d3));
+            }
+            .dot:nth-child(7) {
+              --uib-bottom: 22%;
+              --uib-right: 39%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+            }
+            .dot:nth-child(8) {
+              --uib-bottom: 14%;
+              --uib-right: 67%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+            }
+            .dot:nth-child(9) {
+              --uib-bottom: 53%;
+              --uib-right: -0.8%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d3));
+            }
+            .dot:nth-child(10) {
+              --uib-bottom: 44.5%;
+              --uib-right: 27%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+            }
+            .dot:nth-child(11) {
+              --uib-bottom: 36%;
+              --uib-right: 55.7%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+            }
+            .dot:nth-child(12) {
+              --uib-bottom: 28.7%;
+              --uib-right: 84.3%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d6));
+            }
+            .dot:nth-child(13) {
+              --uib-bottom: 66.8%;
+              --uib-right: 15%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+            }
+            .dot:nth-child(14) {
+              --uib-bottom: 58.8%;
+              --uib-right: 43%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+            }
+            .dot:nth-child(15) {
+              --uib-bottom: 50%;
+              --uib-right: 72%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d6));
+            }
+            .dot:nth-child(16) {
+              --uib-bottom: 42%;
+              --uib-right: 100%;
+              animation-delay: calc(var(--uib-speed) * var(--uib-d7));
+            }
+          
+            .dot:nth-child(3) {
+              --uib-scale: 0.98;
+            }
+            .dot:nth-child(2),
+            .dot:nth-child(8) {
+              --uib-scale: 0.96;
+            }
+            .dot:nth-child(1),
+            .dot:nth-child(7) {
+              --uib-scale: 0.94;
+            }
+            .dot:nth-child(6),
+            .dot:nth-child(12) {
+              --uib-scale: 0.92;
+            }
+            .dot:nth-child(5),
+            .dot:nth-child(11) {
+              --uib-scale: 0.9;
+            }
+            .dot:nth-child(10),
+            .dot:nth-child(16) {
+              --uib-scale: 0.88;
+            }
+            .dot:nth-child(9),
+            .dot:nth-child(15) {
+              --uib-scale: 0.86;
+            }
+            .dot:nth-child(14) {
+              --uib-scale: 0.84;
+            }
+            .dot:nth-child(13) {
+              --uib-scale: 0.82;
+            }
+          </style>
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <style>
+            ::-webkit-scrollbar {
+            background-color: transparent;
+            width: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+            background: linear-gradient(#ff5e55, #49ff88);
+            border-radius: 100px;
+            }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cursor</title>
+    <style>
+        /* Custom Cursor */
+        .custom-cursor {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid red; /* Initial color */
+            pointer-events: none;
+            transition: transform 0.1s linear;
+            box-shadow: 0 0 10px red;
+            z-index: 10000;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            cursor: none; /* Nasconde il cursore di sistema */
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById("cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // RGB Border Animation
+        let hue = 0;
+        setInterval(() => {
+            hue = (hue + 1) % 360;
+            cursor.style.borderColor = `hsl(${hue}, 100%, 50%)`;
+            cursor.style.boxShadow = `0 0 10px hsl(${hue}, 100%, 50%)`;
+        }, 30);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+            
+            
+            
+            
+            
+            
+            
+            <style>
+                body {
+                    background-color: rgb(0, 0, 0); /* Set background color to black */
+                    margin: 0;
+                    color: yellow; /* Default text color */
+                    font-family: "Comic Sans MS", cursive, sans-serif;
+                }
+    
+                .lemonade {
+                    font-family: "Comic Sans MS", cursive, sans-serif;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center; /* Center horizontally */
+                    position: absolute;
+                    top: 20px; /* Position at the top */
+                    left: 50%; /* Center horizontally */
+                    transform: translateX(-50%); /* Adjust for centering */
+                }
+    
+                .lemonade span {
+                    font-size: 11px;
+                    font-weight: bold;
+                    display: inline-block;
+                    background: linear-gradient(
+                        to left,
+                        #fff700,
+                        #ffeb3b,
+                        #ffd700,
+                        #f1c40f,
+                        #fff700
+                    );
+                    background-size: 400% auto;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    animation: growFast 0.3s ease-out forwards, colorFlowFast 2s linear infinite;
+                    animation-delay: calc(var(--i) * 0.05s), 0.3s;
+                }
+    
+                .space {
+                    width: 25px;
+                }
+    
+                @keyframes growFast {
+                    0% {
+                        font-size: 11px;
+                        transform: scale(0.5);
+                        opacity: 0;
+                    }
+                    100% {
+                        font-size: 70px;
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
+    
+                @keyframes colorFlowFast {
+                    0% {
+                        background-position: 100% center;
+                    }
+                    100% {
+                        background-position: 0% center;
+                    }
+                }
+            </style>
+        </head>
+        </head>
+            <!-- Animated Title -->
+            <div class="lemonade">
+                <span style="--i:0">T</span>
+                <span style="--i:1">h</span>
+                <span style="--i:2">e</span>
+    
+                <span class="space"></span>
+    
+                <span style="--i:3">L</span>
+                <span style="--i:4">e</span>
+                <span style="--i:5">m</span>
+                <span style="--i:6">o</span>
+                <span style="--i:7">n</span>
+                <span style="--i:8">a</span>
+                <span style="--i:9">d</span>
+                <span style="--i:10">e</span>
+    
+                <span class="space"></span>
+    
+                <span style="--i:11">E</span>
+                <span style="--i:12">d</span>
+                <span style="--i:13">i</span>
+                <span style="--i:14">t</span>
+                <span style="--i:15">i</span>
+                <span style="--i:16">o</span>
+                <span style="--i:17">n</span>
+            </div>
+        </head>
+    </html>
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemon Menu</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --sidebar-bg: black;
+      --sidebar-text: yellow;
+      --sidebar-line: yellow;
+      --sidebar-icon: yellow;
+      --sidebar-border: yellow;
+
+      --hover-bg: yellow;
+      --hover-text: black;
+      --hover-line: black;
+      --hover-icon: black;
+      --hover-border: yellow;
+
+      --sidebar-width: 260px;
+      --sidebar-radius: 25px;
+      --transition-speed: 0.4s;
+      --font-title: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-title);
+      background: black;
+      color: yellow;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 30px;
+      bottom: 30px;
+      left: 30px;
+      width: var(--sidebar-width);
+      background-color: var(--sidebar-bg);
+      color: var(--sidebar-text);
+      border-radius: var(--sidebar-radius);
+      border: 2px solid var(--sidebar-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0;
+      transition: all var(--transition-speed) ease-in-out;
+    }
+
+    .sidebar:hover {
+      background-color: var(--hover-bg);
+      color: var(--hover-text);
+      transform: scale(1.03);
+      border-color: var(--hover-border);
+    }
+
+    .sidebar-logo {
+      text-align: center;
+      padding-bottom: 10px; /* spazio originale */
+    }
+
+    .sidebar-logo img {
+      max-width: 100%;
+      max-height: 110px; /* aumentato da 80px, ma ancora dentro il contenitore */
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      object-fit: contain; /* mantiene proporzioni */
+    }
+
+    .sidebar:hover .sidebar-logo img {
+      transform: scale(1.1);
+    }
+
+    .sidebar-title {
+      font-family: Comic Sans MS;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--sidebar-line);
+      padding-bottom: 10px;
+    }
+
+    .sidebar:hover .sidebar-title {
+      color: var(--hover-text);
+      border-color: var(--hover-line);
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      color: var(--sidebar-text);
+      text-decoration: none;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .nav-link i,
+    .nav-link span {
+      color: var(--sidebar-icon);
+      transition: color var(--transition-speed);
+    }
+
+    .nav-link:hover {
+      transform: scale(1.07);
+      border: 2px solid var(--hover-line);
+      border-radius: 15px;
+    }
+
+    .sidebar:hover .nav-link {
+      color: var(--hover-text);
+    }
+
+    .sidebar:hover .nav-link i,
+    .sidebar:hover .nav-link span {
+      color: var(--hover-icon);
+    }
+
+    .sidebar-footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px 10px;
+      color: var(--sidebar-text);
+      transition: color var(--transition-speed);
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+
+    .sidebar:hover .sidebar-footer {
+      color: var(--hover-text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🍋 SIDEBAR -->
+  <nav class="sidebar">
+
+    <div class="sidebar-logo">
+      <a href="index.html">
+        <img src="lemonlogo.png" alt="Lemon Logo">
+      </a>
+      
+    </div>
+    <div class="sidebar-title">🍋 Lemon Menu 🍋</div>
+    <ul>
+        <li><a href="index.html" class="nav-link"><i class='bx bxs-home'></i><span>Home</span></a></li>
+        <li><a href="lemons.html" class="nav-link"><i class='bx bxs-invader'></i><span>The Lemons</span></a></li>
+        <li><a href="special.html" class="nav-link"><i class='bx bxs-lemon'></i><span>Special Lemons</span></a></li>
+        <li><a href="about.html" class="nav-link"><i class='bx bxs-info-circle'></i><span>About Lemon</span></a></li>
+        <li><a href="settings.html" class="nav-link"><i class='bx bxs-cog'></i><span>Lemon Settings</span></a></li>
+        <li><a href="login.html" class="nav-link"><i class='bx bx-log-in'></i><span>Login</span></a></li>
+    </ul>
+    <a href="ttcopyrights.html"
+       class="sidebar-footer" target="_blank">© Turtle Tech</a>
+  </nav>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lemon+</title>
+  <style>
+    :root {
+      --border-thickness: 10px;
+      --transition-fast: 0.5s ease;
+      --transition-entry: 1s ease;
+      --popup-padding: 20px;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      overflow: hidden;
+    }
+    #popup {
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: linear-gradient(45deg, #fff300, #ffe066);
+      border: var(--border-thickness) solid;
+      border-image: linear-gradient(90deg, red, green, blue, red) 1;
+      border-radius: 16px;
+      box-sizing: content-box;
+      padding: var(--popup-padding);
+      text-align: center;
+      animation: yellowShift 6s infinite alternate ease-in-out,
+                 borderShift 5s infinite linear;
+      transition:
+        transform var(--transition-entry),
+        width var(--transition-fast),
+        height var(--transition-fast);
+      overflow: hidden;
+      z-index: 999;
+      width: auto;
+      height: auto;
+    }
+    #popup.show {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    #popup h2 { margin: 0 0 1rem; font-size: 1.8rem; color: #222; }
+    #popup p { font-size: 1.1rem; color: #333; margin-bottom: 1rem; }
+    #popup a, #popup button:not(.close-btn) {
+      display: inline-block;
+      background-color: #fff;
+      color: #222;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color var(--transition-fast), transform var(--transition-fast);
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
+    #popup a:hover, #popup button:not(.close-btn):hover {
+      background-color: #f5c518;
+      color: #000;
+    }
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 24px;
+      color: #000;
+      background: none;
+      border: none;
+      padding: 0;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .close-btn:focus { outline: none; }
+
+    /* Turtle Login inside popup */
+    .turtle-login {
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      background: linear-gradient(135deg, #000, #001a00);
+      color: #f0f0f0;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0,179,0,0.5);
+      padding: 1rem;
+    }
+    .turtle-login.active { display: flex; }
+    .turtle-login h2 { margin-bottom: 0.75rem; }
+    .turtle-login input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      background: #111;
+      color: inherit;
+      outline: none;
+      transition: box-shadow var(--transition-fast);
+    }
+    .turtle-login input:focus { box-shadow: 0 0 8px #00b300; }
+    .turtle-login .buttons { display: flex; justify-content: space-between; margin-top: 0.5rem; }
+    .turtle-login .buttons button {
+      flex: 1;
+      margin: 0 0.25rem;
+      padding: 0.5rem;
+      border: 2px solid #00b300;
+      background: transparent;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background var(--transition-fast), transform var(--transition-fast);
+    }
+    .turtle-login .buttons button:hover { transform: scale(1.05); background: #00b300; color: #000; }
+    .signup-panel, .admin-panel {
+      display: none;
+      margin-top: 1rem;
+      background: rgba(0,0,0,0.9);
+      padding: 1rem;
+      border: 2px solid #00b300;
+      border-radius: 1rem;
+      max-height: 300px;
+      overflow-y: auto;
+      transition: max-height var(--transition-fast), opacity var(--transition-fast);
+      opacity: 0;
+    }
+    .signup-panel.active, .admin-panel.active {
+      display: block;
+      opacity: 1;
+      max-height: 500px;
+    }
+    .admin-list { list-style: none; padding: 0; margin: 0; }
+    .admin-list li { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+    .admin-list button {
+      border: 1px solid red;
+      background: transparent;
+      color: red;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background var(--transition-fast), color var(--transition-fast);
+    }
+    .admin-list button:hover { background: red; color: #000; }
+
+    @keyframes yellowShift {
+      0%   { background: linear-gradient(45deg, #fff300, #ffe066); }
+      50%  { background: linear-gradient(45deg, #fff700, #ffeb99); }
+      100% { background: linear-gradient(45deg, #ffee00, #fff3b0); }
+    }
+    @keyframes borderShift {
+      0%   { border-image: linear-gradient(90deg, red, green, blue, red) 1; }
+      25%  { border-image: linear-gradient(90deg, green, blue, red, green) 1; }
+      50%  { border-image: linear-gradient(90deg, blue, red, green, blue) 1; }
+      75%  { border-image: linear-gradient(90deg, red, green, blue, red) 1; }
+      100% { border-image: linear-gradient(90deg, green, blue, red, green) 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="popup">
+  <button class="close-btn" onclick="closePopup()">×</button>
+  <div id="initialContent">
+    <h2>Lemon+</h2>
+    <p>Login or Sign up! IT'S FREE!</p>
+    <a id="goLoginBtn">Go to Login</a>
+  </div>
+  <div id="turtleLogin" class="turtle-login">
+    <button class="close-btn" onclick="closePopup()">×</button>
+    <h2>Turtle Login</h2>
+    <input type="text" id="loginUser" placeholder="Username">
+    <input type="password" id="loginPass" placeholder="Password">
+    <input type="text" id="ttaCode" placeholder="TTA Code">
+    <div class="buttons">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+    <div class="signup-panel" id="signupPanel">
+      <button class="close-btn" id="closeSignupBtn">×</button>
+      <h3>Turtle Sign Up</h3>
+      <input type="text" id="newUser" placeholder="Username">
+      <input type="password" id="newPass" placeholder="Password">
+      <div class="buttons">
+        <button id="saveBtn">Save</button>
+        <button id="cancelBtn">Cancel</button>
+      </div>
+    </div>
+    <div class="admin-panel" id="adminPanel">
+      <button class="close-btn" id="closeAdminBtn">×</button>
+      <h3>All Accounts</h3>
+      <ul class="admin-list" id="adminList"></ul>
+    </div>
+  </div>
+</div>
+
+<script>
+// Apri popup dopo 2s con animazione di entrata
+window.addEventListener('load', () => {
+  setTimeout(() => document.getElementById('popup').classList.add('show'), 1000);
+});
+function closePopup() {
+  document.getElementById('popup').classList.remove('show');
+}
+
+const popup = document.getElementById('popup');
+const goLogin = document.getElementById('goLoginBtn');
+const initial = document.getElementById('initialContent');
+const turtle = document.getElementById('turtleLogin');
+
+// Ridimensiona popup al contenuto attivo
+function resizePopup() {
+  const content = initial.style.display !== 'none' ? initial : turtle;
+  const rect = content.getBoundingClientRect();
+  const pad = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--popup-padding'));
+  popup.style.width = rect.width + pad*2 + 'px';
+  popup.style.height = rect.height + pad*2 + 'px';
+}
+
+// Swap a turtle login e resize animato
+goLogin.addEventListener('click', () => {
+  initial.style.display = 'none';
+  turtle.classList.add('active');
+  resizePopup();
+});
+
+// Observer per animare resize al mutare del DOM
+const observer = new MutationObserver(resizePopup);
+observer.observe(turtle, { childList: true, subtree: true, attributes: true });
+
+// Logica login/signup/admin
+let users = JSON.parse(localStorage.getItem('turtleUsers') || '[]');
+const signupBtn = document.getElementById('signupBtn');
+const signupPanel = document.getElementById('signupPanel');
+const closeSignup = document.getElementById('closeSignupBtn');
+const cancelBtn = document.getElementById('cancelBtn');
+const saveBtn = document.getElementById('saveBtn');
+const loginBtnEl = document.getElementById('loginBtn');
+const closeAdmin = document.getElementById('closeAdminBtn');
+const adminPanel = document.getElementById('adminPanel');
+const adminList = document.getElementById('adminList');
+
+signupBtn.addEventListener('click', () => signupPanel.classList.add('active'));
+closeSignup.addEventListener('click', () => signupPanel.classList.remove('active'));
+cancelBtn.addEventListener('click', () => signupPanel.classList.remove('active'));
+saveBtn.addEventListener('click', () => {
+  const u = document.getElementById('newUser').value.trim();
+  const p = document.getElementById('newPass').value;
+  if (!u || !p) return alert('Enter both fields');
+  if (users.find(x => x.username===u)) return alert('Username exists');
+  users.push({username:u,password:p});
+  localStorage.setItem('turtleUsers', JSON.stringify(users));
+  signupPanel.classList.remove('active');
+});
+
+closeAdmin.addEventListener('click', () => adminPanel.classList.remove('active'));
+loginBtnEl.addEventListener('click', () => {
+  const u = document.getElementById('loginUser').value.trim();
+  const p = document.getElementById('loginPass').value;
+  const code = document.getElementById('ttaCode').value.trim();
+  if (code==='tta-3-21-12') { renderAdmin(); adminPanel.classList.add('active'); resizePopup(); return; }
+  if (users.find(x=>x.username===u&&x.password===p)) window.location.href='lemon+members.html';
+  else alert('Invalid credentials');
+});
+
+function renderAdmin() {
+  adminList.innerHTML = '';
+  users.forEach((usr,i) => {
+    const li = document.createElement('li');
+    li.textContent = `${usr.username} (${usr.password})`;
+    const btn = document.createElement('button');
+    btn.textContent = 'Ban';
+    btn.addEventListener('click', () => ban(i));
+    li.appendChild(btn);
+    adminList.appendChild(li);
+  });
+  resizePopup();
+}
+function ban(i) {
+  if (confirm(`Ban ${users[i].username}?`)) {
+    users.splice(i, 1);
+    localStorage.setItem('turtleUsers', JSON.stringify(users));
+    renderAdmin();
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about:blank</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Bottone "Open in about:blank" */
+    .open-btn {
+      position: absolute;
+      top: 25%; /* Posizione leggermente più alta */
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 20px;
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      border: 2px solid yellow;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .open-btn:hover {
+      background-color: yellow;
+      color: black;
+      transform: translateX(-50%) scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bottone per aprire about:blank in full-screen -->
+  <button class="open-btn" onclick="openInBlank()">Open in about:blank</button>
+
+  <script>
+    function openInBlank() {
+      // Apri una nuova finestra/tab con about:blank in modalità full-screen
+      const aboutBlankWindow = window.open('about:blank', '_blank', 'fullscreen=yes, toolbar=no, menubar=no, resizable=yes');
+      aboutBlankWindow.document.write('<html><head><title>about:blank</title></head><body style="margin:0; padding:0; overflow:hidden;">');
+      aboutBlankWindow.document.write('<iframe src="https://turtle-tech-tt.github.io/lemon/" width="100%" height="100%" style="border:none; width:100vw; height:100vh;"></iframe>');
+      aboutBlankWindow.document.write('</body></html>');
+      aboutBlankWindow.document.close();
+
+      // Tentativo di forzare la modalità full-screen del browser
+      if (aboutBlankWindow.document.documentElement.requestFullscreen) {
+        aboutBlankWindow.document.documentElement.requestFullscreen();
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sfondo Animato con Linee e Pallini Gialli</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    canvas#sfondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="sfondo"></canvas>
+
+  <script>
+    const canvas = document.getElementById('sfondo');
+    const ctx = canvas.getContext('2d');
+
+    let width, height;
+    let particelle = [];
+    const numParticelle = 100;
+    const distanzaMax = 120;
+
+    function ridimensiona() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', ridimensiona);
+    ridimensiona();
+
+    class Particella {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 1;
+        this.vy = (Math.random() - 0.5) * 1;
+        this.r = 2;
+        this.colore = Math.random() < 0.25 ? '#ffd700' : '#ffffff'; 
+      }
+
+      aggiorna() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+
+      disegna() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+        ctx.fillStyle = this.colore;
+        ctx.fill();
+      }
+    }
+
+    function creaParticelle() {
+      particelle = [];
+      for (let i = 0; i < numParticelle; i++) {
+        particelle.push(new Particella());
+      }
+    }
+
+    function disegnaLinee() {
+      for (let i = 0; i < particelle.length; i++) {
+        for (let j = i + 1; j < particelle.length; j++) {
+          const dx = particelle[i].x - particelle[j].x;
+          const dy = particelle[i].y - particelle[j].y;
+          const distanza = Math.sqrt(dx * dx + dy * dy);
+
+          if (distanza < distanzaMax) {
+            ctx.beginPath();
+            ctx.moveTo(particelle[i].x, particelle[i].y);
+            ctx.lineTo(particelle[j].x, particelle[j].y);
+            ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distanza / distanzaMax})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function anima() {
+      ctx.clearRect(0, 0, width, height);
+      particelle.forEach(p => {
+        p.aggiorna();
+        p.disegna();
+      });
+      disegnaLinee();
+      requestAnimationFrame(anima);
+    }
+
+    creaParticelle();
+    anima();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .donate-button:hover img {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .donate-button img {
+    transition: transform 0.2s ease-in-out;
+  }
+</style>
+
+<div class="donate-button" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+  <a href="https://www.buymeacoffee.com/turtle.tech">
+    <img src="https://img.buymeacoffee.com/button-api/?text=Donate to Turtle Tech&emoji=🐢&slug=turtle.tech&button_colour=40DCA5&font_colour=ffffff&font_family=Bree&outline_colour=000000&coffee_colour=FFDD00" />
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="turtle.tech" data-description="Support me on Buy me a coffee!" data-message="Please Donate! <3" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

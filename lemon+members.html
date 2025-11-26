@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="icon" type="image/png" href="lemonlogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon+</title>
+    <style>
+        @keyframes changeColor {
+            0% { color: rgb(255, 0, 0); }
+            25% { color: rgb(0, 255, 0); }
+            50% { color: rgb(0, 0, 255); }
+            75% { color: rgb(255, 255, 0); }
+            100% { color: rgb(255, 0, 255); }
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+            background-color: black; /* Trasparente */
+        }
+
+        .welcome-text {
+            font-family: 'Comic Sans MS', sans-serif;
+            font-size: 70px; /* Cambiato a 70px */
+            font-weight: bold; /* Rende il testo grassetto */
+            animation: changeColor 5s infinite;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-text">Welcome Member!</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<head>
+  <title>Lemon - Turtle Tech</title>
+  <link id="favicon-tag" rel="icon" href="assets/default-favicon.ico" type="image/x-icon" />
+
+  <script>
+    (function() {
+      const customTitle = localStorage.getItem('tabCloakTitle');
+      const customFavicon = localStorage.getItem('tabCloakFavicon');
+
+      if (customTitle) {
+        document.title = customTitle;
+      }
+      if (customFavicon) {
+        let linkTag = document.getElementById('favicon-tag');
+        if (!linkTag) {
+          linkTag = document.createElement('link');
+          linkTag.id = 'favicon-tag';
+          linkTag.rel = 'icon';
+          linkTag.type = 'image/x-icon';
+          document.head.appendChild(linkTag);
+        }
+        linkTag.href = customFavicon;
+      }
+    })();
+  </script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    
+
+    .logout-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.75em 2em;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+      color: #ff0000;
+      background-color: #000;
+      border: 2px solid #000000;
+      border-radius: 0.5em;
+      cursor: pointer;
+      text-transform: uppercase;
+      overflow: hidden;
+      box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+      transition: box-shadow 0.3s ease;
+    }
+
+    @keyframes neon-flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 0.8;
+        transform: rotate(0deg) scale(1);
+      }
+      20%, 24%, 55% {
+        opacity: 0.2;
+        transform: rotate(1deg) scale(1.02);
+      }
+    }
+
+    .logout-btn:hover {
+      box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <button class="logout-btn" id="logoutBtn">Logout</button>
+
+  <script>
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+      window.location.href = 'login.html';
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow-y: auto; /* Abilita lo scroll verticale */
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(255, 247, 0);
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    /* Classe rinominata in lemon+-button (il + va escape-ato) */
+    .lemon\+\-button {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      margin: 15px 0;
+      background-color: black;
+      color: rgb(255, 247, 0);
+      border: 2px solid rgb(255, 247, 0);
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .lemon\+\-button::before {
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(255, 247, 0);
+      opacity: 0.1;
+      transition: left 0.4s ease;
+    }
+
+    .lemon\+\-button:hover::before {
+      left: 0;
+    }
+
+    .lemon\+\-button:hover {
+      background-color: rgb(255, 247, 0);
+      color: black;
+      box-shadow: 0 0 10px limegreen, 0 0 20px limegreen;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lemon+ Extras</h1>
+
+    <!-- 10 bottoni con nuova classe -->
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+    <a href="example.html" class="lemon+-button">example</a>
+
+    <footer>
+      © 2025 Turtle Tech
+    </footer>
+  </div>
